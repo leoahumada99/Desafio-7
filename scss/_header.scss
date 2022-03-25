@@ -1,0 +1,23 @@
+@import "variables";
+
+body {
+  background-color: orange;
+}
+header {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: space-between;
+  nav {
+    padding: $relleno;
+    ul {
+      li {
+        list-style-type: none;
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
